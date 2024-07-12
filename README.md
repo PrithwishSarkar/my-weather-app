@@ -38,7 +38,7 @@ git clone https://github.com/PrithwishSarkar/my-weather-app.git
 
 - Install the packages using the command `npm install`
 - Start the local development server using the command `npm start`
-- You can view the website at ![Localhost](https://localhost:3000)
+- You can view the website at [Localhost](https://localhost:3000)
 
 <br/>
 
