@@ -1,11 +1,13 @@
 ![Application screenshot](./src/assets/Screenshot%20(728).png)
+<br/>
+
 ![Application screenshot](./src/assets/Screenshot%20(729).png)
 
 <br/>
 <br/>
 
 With `My Weather App` user can search locations by city name and observe the Current Weather and the Forecast for the next 5 days for that city(The free API does not provide 7 day forecast).
-<br />
+<br/>
 The app is developed using React.js and material-UI.
 
 <br/>
