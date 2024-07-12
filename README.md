@@ -12,11 +12,11 @@ The app is developed using React.js and material-UI.
 
 <br/>
 
-<!-- ## 💻 Live Demo:
+## 💻 Live Demo:
 
+https://weatherquery.free.nf
 
-
-<br/> -->
+<br/> 
 
 ## ✨ Getting Started
 
