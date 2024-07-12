@@ -30,9 +30,9 @@ function App() {
   // };
 
   async function searchHandler(data) {
-    const [lat, lon] = data.value.split(' ');
+    const [lat, lon] = data.value.split(' ');//Extracting Latitude and Longitude values from Search result.
 
-    setIsLoading(true);
+    setIsLoading(true);//Waiting for Weather fetch.
 
     try {
       const [todayWeather, weekForecast] =
@@ -43,7 +43,7 @@ function App() {
       setError(true);
     }
 
-    setIsLoading(false);
+    setIsLoading(false);//Weather fetching complete.
   };
 
   let appContent = (
@@ -75,7 +75,7 @@ function App() {
         Explore current weather data and 5-day weather forecast for any city!
       </Typography>
     </Box>
-  );
+  );//Start Page.
 
   if (today && week) {
     appContent = (
@@ -90,7 +90,7 @@ function App() {
         </Grid>
       </React.Fragment>
     );
-  }
+  }//Displays Current Weather and 5-day forecast if evrything works fine.
 
   if (error) {
     appContent = (
@@ -100,7 +100,7 @@ function App() {
         errorMessage="Something went wrong"
       />
     );
-  }
+  }//Displays error message.
 
   if (isLoading) {
     appContent = (
@@ -129,7 +129,7 @@ function App() {
         </LoadingBox>
       </Box>
     );
-  }
+  }//Displays Loading screen while waiting for content being fetched.
 
 
   return (
@@ -176,7 +176,7 @@ function App() {
       </Grid>
 
     </Box>
-  );
+  );//Displaying the complete page after all rendering is done.
 }
 
 export default App;

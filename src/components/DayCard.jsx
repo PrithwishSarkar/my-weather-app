@@ -10,7 +10,7 @@ export default function DayCard(props){
             backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',
             margin: '0.5rem', padding: '0.5rem', borderRadius: '4px'
         }}>
-        <Grid container>
+        <Grid container> 
             <Grid item xs={6} direction={'column'} sx={{
             display: 'flex',
             justifyContent: 'center',
@@ -61,5 +61,5 @@ export default function DayCard(props){
             
         </Grid>
         </Box>
-    );
+    );//Returns the forecast details for each day.
 }

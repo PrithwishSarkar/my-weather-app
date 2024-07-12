@@ -16,5 +16,5 @@ export default function LoadingBox(props) {
       <CircularProgress sx={{ color: 'rgba(255,255,255, .8)' }} />
       {props.children}
     </Box>
-  );
+  );// Shows revolving progress and the Loading text.
 }

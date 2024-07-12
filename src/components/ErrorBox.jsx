@@ -43,5 +43,5 @@ export default function ErrorBox(props) {
         {props.errorMessage || 'Internal error'}
       </Typography>
     </Box>
-  );
+  );//Displays Error.
 }

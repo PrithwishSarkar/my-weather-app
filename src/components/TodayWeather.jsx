@@ -50,10 +50,13 @@ export default function TodayWeather({ data }) {
         let val = ((tmp / 22.5) + 0.5);
         const arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
         return arr[parseInt(val % 16)];
-    }
+    }//Finding out wind direction based on degree returned by API.
+
     function capital(str) {
         return (str.charAt(0).toUpperCase() + str.slice(1));
-    }
+    }//Capitalizes first letter of weather conditions.
+
+    //Extracting weather details for easy access.
     const city = data.name;
     const temp = data.main.temp + "°C";
     // const feels_like = data.main.feels_like + "°C";
@@ -216,5 +219,5 @@ export default function TodayWeather({ data }) {
                 } */}
         </Box>
 
-    );
+    );//Displaying Current weather.
 }

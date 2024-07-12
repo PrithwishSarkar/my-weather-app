@@ -1,5 +1,5 @@
 const API_URL = 'https://api.openweathermap.org/data/2.5';
-const API_KEY = 'e365c537ede7a5f259cea672ed377ec2';
+const API_KEY = 'Enter your OpenWeather API Key Here';
 
 export async function fetchWeatherData(lat, lon) {
     try {
@@ -12,8 +12,8 @@ export async function fetchWeatherData(lat, lon) {
         ),
       ]);
   
-      const weather = await weatherPromise.json();
-      const forcast = await forcastPromise.json();
+      const weather = await weatherPromise.json(); //Getting Current Weather data.
+      const forcast = await forcastPromise.json(); //Getting 5 day forecast data.
       return [weather, forcast];
     } catch (error) {
       console.log(error);

@@ -6,7 +6,7 @@ const Search = ({ onSearchChange }) => {
   const [searchCity, setSearchCity] = useState(null);
 
   const loadOptions = async (inputCity) => {
-    const citiesList = await findCities(inputCity);
+    const citiesList = await findCities(inputCity); //Getting city name suggestions for data entered by user.
 
     return {
       options: citiesList.data.map((city) => {
@@ -15,12 +15,12 @@ const Search = ({ onSearchChange }) => {
           label: `${city.name}, ${city.countryCode}`
         };
       }),
-    };
+    };//Showing options available.
   };
 
   const onChangeHandler = (city) => {
     setSearchCity(city);
-    onSearchChange(city);
+    onSearchChange(city);//Returns the desired result.
   };
 
   return (

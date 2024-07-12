@@ -7,13 +7,13 @@ export async function findCities(input) {
         {
             method: 'GET',
             headers: {
-              'X-RapidAPI-Key': 'ea40d6783fmsh3738e242f449286p104688jsnf9b196457d82',
+              'X-RapidAPI-Key': 'Enter your Rapid API key here',
               'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
             }
           }
       );
   
-      const data = await response.json();
+      const data = await response.json(); //Getting city names as per search query.
       return data;
     } catch (error) {
       console.log(error);
