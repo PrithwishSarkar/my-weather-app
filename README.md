@@ -54,7 +54,7 @@ Check `packages.json` for details
 ## 📄 Todos
 
 - [ ] User profiles and authentication.
-- [ ] Set Favourites for Guest as well as user profiles.
+- [ ] Set Favourite cities list for Guest as well as user profiles.
 - [ ] On launch, find user location weather by utilizing GeolocationAPI/GEOCODING
 - [ ] Translation to local languages as per location.
 - [ ] Celcius/Fahrenheit conversion.
