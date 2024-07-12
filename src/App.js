@@ -29,7 +29,7 @@ function App() {
   //   searchHandler(city);
   // };
 
-  const searchHandler = async (data) => {
+  async function searchHandler(data) {
     const [lat, lon] = data.value.split(' ');
 
     setIsLoading(true);
@@ -72,8 +72,7 @@ function App() {
 
         }}
       >
-        Explore current weather data and 6-day forecast of more than 200,000
-        cities!
+        Explore current weather data and 5-day weather forecast for any city!
       </Typography>
     </Box>
   );
@@ -137,7 +136,7 @@ function App() {
 
     <Box sx={{
       backgroundImage: `url(${Image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
-       height: '94vh', width: '94vw', margin: 0, padding: '3vh 3vw', overflow: {xs: 'scroll', md: 'hidden'}
+      height: '94vh', width: '94vw', margin: 0, padding: '3vh 3vw', overflow: { xs: 'scroll', md: 'hidden' }
     }}>
 
       <Grid container>

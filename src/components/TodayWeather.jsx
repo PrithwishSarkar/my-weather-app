@@ -11,7 +11,7 @@ export default function TodayWeather({ data }) {
     //   initFav = [];
     // else
     //   initFav = JSON.parse(localStorage.getItem("favouritess"));
-      
+
     // const [keyID, setKeyID] = useState(-1);
     // const [favList, setFavList] = useState(initFav);
     // const [isPresent, setIsPresent] = useState(false);
@@ -67,146 +67,146 @@ export default function TodayWeather({ data }) {
     //     if (city == favList[i].name)
     //         setIsPresent(true);
 
-        return (
-            <Box sx={{
-                backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(5px)',
-                margin: '2rem', padding: '2rem', borderRadius: '10px', boxShadow: {
-                    xs: 'none',
-                    sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
-                  },
-            }}>
+    return (
+        <Box sx={{
+            backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(5px)',
+            margin: '2rem', padding: '2rem', borderRadius: '10px', boxShadow: {
+                xs: 'none',
+                sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
+            },
+        }}>
 
-                <Grid container spacing={2} justifyContent={'space-around'}>
+            <Grid container spacing={2} justifyContent={'space-around'}>
 
-                    <Grid item xs={6} sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '80px',  paddingBottom: '10px',
-                        marginBottom: '50px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',
-                    }}>
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '22px', sm: '36px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                            {weather}
-                        </Typography>
-                    </Grid>
+                <Grid item xs={6} sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '80px', paddingBottom: '10px',
+                    marginBottom: '50px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',
+                }}>
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '22px', sm: '36px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {weather}
+                    </Typography>
+                </Grid>
 
-                    <Grid item xs={6} direction={'column'} sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '80px', paddingBottom: '10px',
-                        marginBottom: '50px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',
-                    }}>
+                <Grid item xs={6} direction={'column'} sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '80px', paddingBottom: '10px',
+                    marginBottom: '50px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',
+                }}>
 
-                        <DeviceThermostatIcon  style={{ fontSize: '2rem' }} />
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '20px', sm: '30px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                            {temp}
-                        </Typography>
-                    </Grid>
+                    <DeviceThermostatIcon style={{ fontSize: '2rem' }} />
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '20px', sm: '30px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {temp}
+                    </Typography>
+                </Grid>
 
-                    <Grid item xs={12} sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '80px'
-                    }}>
-                        <FmdGoodIcon />
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '18px', sm: '28px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins',
-                                marginLeft: "20px"
-                            }}
-                        >
-                            {city}, {country}
-                        </Typography>
-                    </Grid>
+                <Grid item xs={12} sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '80px'
+                }}>
+                    <FmdGoodIcon />
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '18px', sm: '28px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins',
+                            marginLeft: "20px"
+                        }}
+                    >
+                        {city}, {country}
+                    </Typography>
+                </Grid>
 
-                    <Grid item xs={12} sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        marginBottom: '80px'
-                    }}>
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '16px', sm: '24px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                            {new Date().toLocaleString()} IST
-                        </Typography>
-
-                    </Grid>
-
-                    <Grid item xs={5} direction={'column'} sx={{
-                        display: 'flex',
-                        justifyContent: 'center', borderRadius: '10px',
-                        alignItems: 'center', paddingBottom: '10px',
-                        height: '90px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)', boxShadow: {
-                            xs: 'none',
-                            sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
-                          },
-                    }}>
-                        <OpacityIcon  style={{ fontSize: '2rem' }} />
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '18px', sm: '24px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                            {humidity}
-                        </Typography>
-                    </Grid>
-
-                    <Grid item xs={5} direction={'column'} sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',  borderRadius: '10px', paddingBottom: '10px',
-                        height: '90px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)',boxShadow: {
-                            xs: 'none',
-                            sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
-                          },
-                    }}>
-                        <AirIcon  style={{ fontSize: '2rem' }} />
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '18px', sm: '24px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                            {wind_speed}
-                        </Typography>
-                        <Typography variant="h3"
-                            sx={{
-                                fontSize: { xs: '18px', sm: '20px' },
-                                color: 'rgba(0,0,0, .85)',
-                                fontFamily: 'Poppins'
-                            }}
-                        >
-                           {wind_dir}
-                        </Typography>
-                    </Grid>
+                <Grid item xs={12} sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    marginBottom: '80px'
+                }}>
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '16px', sm: '24px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {new Date().toLocaleString()} IST
+                    </Typography>
 
                 </Grid>
 
-                {/* {isPresent ? <Button size='medium' variant='contained' onClick={addEntry(city, data.coord.lat, data.coord.lon)} sx={{
+                <Grid item xs={5} direction={'column'} sx={{
+                    display: 'flex',
+                    justifyContent: 'center', borderRadius: '10px',
+                    alignItems: 'center', paddingBottom: '10px',
+                    height: '90px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)', boxShadow: {
+                        xs: 'none',
+                        sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
+                    },
+                }}>
+                    <OpacityIcon style={{ fontSize: '2rem' }} />
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '18px', sm: '24px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {humidity}
+                    </Typography>
+                </Grid>
+
+                <Grid item xs={5} direction={'column'} sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center', borderRadius: '10px', paddingBottom: '10px',
+                    height: '90px', backgroundColor: 'rgba(255, 255, 255, .30)', backdropFilter: 'blur(10px)', boxShadow: {
+                        xs: 'none',
+                        sm: 'rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px',
+                    },
+                }}>
+                    <AirIcon style={{ fontSize: '2rem' }} />
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '18px', sm: '24px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {wind_speed}
+                    </Typography>
+                    <Typography variant="h3"
+                        sx={{
+                            fontSize: { xs: '18px', sm: '20px' },
+                            color: 'rgba(0,0,0, .85)',
+                            fontFamily: 'Poppins'
+                        }}
+                    >
+                        {wind_dir}
+                    </Typography>
+                </Grid>
+
+            </Grid>
+
+            {/* {isPresent ? <Button size='medium' variant='contained' onClick={addEntry(city, data.coord.lat, data.coord.lon)} sx={{
 
                 }}>Add to Favourites</Button>
                     :
@@ -214,7 +214,7 @@ export default function TodayWeather({ data }) {
 
                     }}>Remove from Favourites</Button>
                 } */}
-            </Box>
+        </Box>
 
-        );
+    );
 }
